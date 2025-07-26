@@ -1,0 +1,146 @@
+.hero-section {
+    text-align: center;
+    padding: 40px 20px;
+    margin-bottom: 30px;
+    background-color: transparent; 
+    box-shadow: none; 
+    border-radius: 0; 
+}
+
+.hero-section h1 {
+    font-size: 3em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.hero-section p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 25px; 
+    padding: 20px 0;
+}
+
+.tool-card {
+    background-color: #fcfcfc; 
+    padding: 20px;
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    text-align: center;
+    text-decoration: none; 
+    color: #333; 
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+.tool-card:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); 
+}
+
+.tool-icon {
+    width: 95px;
+    height: 95px; 
+    background-color: #E7E4D3;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin: 0 auto 15px auto; 
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.05); 
+}
+
+.tool-icon img {
+    width: 86px; 
+    height: 86px; 
+    object-fit: contain; 
+}
+
+.tool-card h2 {
+    font-size: 1.4em;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.tool-card p {
+    font-size: 0.9em;
+    color: #777;
+    line-height: 1.5;
+}
+
+
+.header-quote {
+    flex-grow: 1;
+    text-align: center;
+    color: #fff; 
+    font-size: 1.1em;
+    font-style: italic;
+    max-width: 600px; 
+    margin: 0 auto; 
+}
+
+
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2.2em;
+    }
+
+    .hero-section p {
+        font-size: 1em;
+    }
+
+    .tools-grid {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); 
+        gap: 15px; 
+    }
+
+    .tool-card {
+        padding: 15px;
+    }
+
+    .tool-icon {
+        width: 80px; 
+        height: 80px;
+        margin-bottom: 10px;
+    }
+
+    .tool-icon img {
+        width: 70px; 
+        height: 70px;
+    }
+
+    .tool-card h2 {
+        font-size: 1.2em;
+    }
+
+    .tool-card p {
+        font-size: 0.85em;
+    }
+}
+
+@media (max-width: 480px) {
+    .tools-grid {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); 
+        gap: 10px;
+    }
+    .tool-icon {
+        width: 70px;
+        height: 70px;
+    }
+    .tool-icon img {
+        width: 60px;
+        height: 60px;
+    }
+    .tool-card h2 {
+        font-size: 1.1em;
+    }
+    .tool-card p {
+        font-size: 0.8em;
+    }
+}
